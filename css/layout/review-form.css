@@ -1,0 +1,296 @@
+@import url('../base.css');
+
+.review-form-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.review-form-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.review-form-container {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Изменил с flex-start на center */
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-content h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.review-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.review-form-hall-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-form-hall-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.review-form-hall-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.review-form-hall-details {
+    font-size: 1rem;
+    color: #333;
+}
+
+.review-form {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+.review-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 1.5rem;
+    color: #7c7c7c;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.active {
+    color: #D32F2F;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #25084F;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #871F65;
+}
+
+/* Планшеты */
+@media (max-width: 992px) {
+    .review-form-section {
+        padding: 50px 0;
+    }
+
+    .review-form-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start; /* На планшетах возвращаем выравнивание по верху */
+    }
+
+    .review-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .review-content p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
+    .review-form {
+        max-width: 100%;
+    }
+
+    .review-form-hall-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .review-form-hall-details {
+        font-size: 0.95rem;
+    }
+}
+
+/* Мобильные устройства */
+@media (max-width: 576px) {
+    .review-form-section {
+        padding: 40px 0;
+    }
+
+    .review-form-section .container {
+        padding: 0 15px;
+    }
+
+    .review-form-container {
+        gap: 25px;
+    }
+
+    .review-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .review-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .review-form-hall-list {
+        gap: 12px;
+    }
+
+    .review-form-hall-item {
+        gap: 12px;
+    }
+
+    .review-form-hall-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .review-form-hall-details {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .review-form {
+        padding: 25px 15px;
+        border-radius: 8px;
+    }
+
+    .review-form h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .rating-stars {
+        gap: 8px;
+    }
+
+    .star {
+        font-size: 1.3rem;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 375px) {
+    .review-form-section .container {
+        padding: 0 12px;
+    }
+
+    .review-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .review-content p {
+        font-size: 0.85rem;
+    }
+
+    .review-form-hall-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .review-form-hall-details {
+        font-size: 0.8rem;
+    }
+
+    .review-form {
+        padding: 20px 12px;
+    }
+
+    .review-form h3 {
+        font-size: 1.2rem;
+    }
+}

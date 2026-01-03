@@ -1,0 +1,13 @@
+@import url('./base.css');
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/about.css');
+@import url('./layout/why-choose.css');
+@import url('./layout/special-offer.css');
+@import url('./layout/how-we-work.css');
+@import url('./layout/prices.css');
+@import url('./layout/booking.css');
+@import url('./layout/reviews.css');
+@import url('./layout/faq.css');
+@import url('./layout/review-form.css');
+@import url('./layout/footer.css');
