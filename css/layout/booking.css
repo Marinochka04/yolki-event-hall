@@ -15,6 +15,8 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .booking-content h2 {
@@ -44,6 +46,13 @@
 .contact-icon {
     font-size: 0.9rem;
     color: #D32F2F;
+    flex-shrink: 0;
+}
+
+.contact-icon img {
+    width: 24px;
+    height: 24px;
+    display: block;
 }
 
 .contact-text {
@@ -59,15 +68,17 @@
 
 .booking-hall-item {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
 }
 
 .booking-hall-item img {
     width: 80px;
+    min-width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 5px;
+    flex-shrink: 0;
 }
 
 .booking-hall-details {
@@ -87,6 +98,7 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     border-radius: 10px;
     background: #fff;
+    flex-shrink: 0;
 }
 
 .booking-form h3 {
@@ -116,6 +128,13 @@
     color: #333;
     background-color: #fafafa;
     transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
 }
 
 .submit-btn {
@@ -157,8 +176,13 @@
         padding: 30px 24px;
     }
 
+    .booking-hall-item {
+        gap: 12px;
+    }
+
     .booking-hall-item img {
         width: 70px;
+        min-width: 70px;
         height: 70px;
     }
 }
@@ -166,6 +190,10 @@
 @media (max-width: 576px) {
     .booking-section {
         padding: 20px 0;
+    }
+
+    .booking-section .container {
+        padding: 0 15px;
     }
 
     .booking-content h2 {
@@ -180,13 +208,31 @@
         text-align: center;
     }
 
+    .contact-item {
+        gap: 8px;
+    }
+
+    .contact-icon img {
+        width: 22px;
+        height: 22px;
+    }
+
     .contact-text,
     .booking-hall-details {
         font-size: 0.85rem;
     }
 
+    .booking-hall-list {
+        gap: 10px;
+    }
+
+    .booking-hall-item {
+        gap: 10px;
+    }
+
     .booking-hall-item img {
         width: 60px;
+        min-width: 60px;
         height: 60px;
     }
 
