@@ -1,7 +1,7 @@
 @import url('../base.css');
 
 .review-form-section {
-    background-color: #f9f9f9;
+    background: var(--main-bg-gradient);
     padding: 40px 0;
 }
 

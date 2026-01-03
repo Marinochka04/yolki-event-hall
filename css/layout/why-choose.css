@@ -1,7 +1,7 @@
 @import url('../base.css');
 
 .why-choose {
-    background-color: #f8f8f8;
+    background: var(--main-bg-gradient);
     padding: 40px 0;
     min-height: calc(100vh - 100px);
     display: flex;
@@ -20,6 +20,15 @@
     color: #000000;
     text-align: center;
     line-height: 1.2;
+}
+
+.why-choose p {
+    font-size: 1.1rem;
+    color: #6c7a6e;
+    text-align: center;
+    line-height: 1.45;
+    max-width: 800px;
+    margin: 0 auto 24px auto;
 }
 
 .why-choose-features-grid,
@@ -165,6 +174,10 @@
     .why-choose h2 {
         font-size: 1.5rem;
         margin-bottom: 20px;
+    }
+
+    .why-choose p {
+        font-size: 0.95rem;
     }
     
     .why-choose-features-grid,

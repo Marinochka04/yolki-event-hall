@@ -2,7 +2,7 @@
 
 .how-we-work {
     padding: 40px 0;
-    background-color: #f8f8f8;
+    background: var(--main-bg-gradient);
 }
 
 .how-we-work .container {

@@ -1,8 +1,17 @@
 @import url('../base.css');
 
 .prices-section {
-    background-color: #f9f9f9;
-    padding: 60px 0;
+    background: var(--main-bg-gradient);
+    padding: 40px 0;
+}
+
+.prices-section p {
+    font-size: 1.1rem;
+    color: #6c7a6e;
+    text-align: center;
+    line-height: 1.45;
+    max-width: 800px;
+    margin: 0 auto 24px auto;
 }
 
 .prices-section .container {
@@ -172,6 +181,10 @@
     .prices-section h2 {
         font-size: 1.5rem;
         margin-bottom: 8px;
+    }
+
+    .prices-section p {
+        font-size: 0.95rem;
     }
 
     .prices-intro {

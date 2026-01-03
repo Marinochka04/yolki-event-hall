@@ -2,7 +2,7 @@
 
 .special-offer {
     padding: 40px 20px 40px;
-    background-color: #fff;
+    background: var(--main-bg-gradient);
 }
 
 .special-offer .container {

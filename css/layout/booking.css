@@ -1,8 +1,8 @@
 @import url('../base.css');
 
 .booking-section {
-    background-color: #f9f9f9;
-    padding: 60px 0;
+    background: var(--main-bg-gradient);
+    padding: 40px 0;
 }
 
 .booking-container {
@@ -105,6 +105,15 @@
     font-size: 1.6rem;
     margin-bottom: 15px;
     line-height: 1.2;
+}
+
+.booking-form p {
+    font-size: 0.9rem;
+    color: #6c7a6e;
+    text-align: center;
+    line-height: 1.45;
+    max-width: 800px;
+    margin: 10px auto 24px auto;
 }
 
 .form-group {

@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     padding: 80px 0 80px 0;
-    background-color: #f8f8f8;
+    background: var(--main-bg-gradient);
 }
 
 .hero .container {

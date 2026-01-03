@@ -10,6 +10,15 @@
 	font-style: normal;
 }
 
+:root {
+    --main-bg-gradient: linear-gradient(
+        180deg,
+        #f3eefd 0%,
+        #e7ddfaad 50%,
+        #d8ceeebe 100%
+    );
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +27,6 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f8f8f8;
     color: #000;
     line-height: 1.6;
 }
