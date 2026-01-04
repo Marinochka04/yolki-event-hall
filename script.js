@@ -93,7 +93,7 @@ const hallPhotos = {
         photos: [
             'images/chalet-main.jpg',
             'images/chalet.png',
-            'images/chalet1.jpg',
+            'images/chalet-hall.JPG',
             'images/chalet2.png',
             'images/chalet3.png',
             'images/chalet4.png',
