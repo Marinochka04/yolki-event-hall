@@ -324,18 +324,24 @@
                     </div>
                     <div class="booking-form">
                         <h3>Оставьте заявку — мы свяжемся с вами!</h3>
-                        <form action="#" method="post">
+                        <form action="https://formsubmit.co/a5159030@yandex.ru" method="POST">
+                            <!-- Скрытые поля для настройки -->
+                            <input type="hidden" name="_subject" value="Новая заявка на бронирование зала «ЁЛКИ»">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" style="display:none">
+                            
                             <div class="form-group">
                                 <label for="name">Ваше имя</label>
-                                <input type="text" id="name" placeholder="Введите имя" required>
+                                <input type="text" id="name" name="name" placeholder="Введите имя" required>
                             </div>
                             <div class="form-group">
                                 <label for="contact">Телефон или e-mail</label>
-                                <input type="text" id="contact" placeholder="Телефон или e-mail" required>
+                                <input type="text" id="contact" name="contact" placeholder="Телефон или e-mail" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Какой зал интересует или ваш вопрос</label>
-                                <textarea id="message" placeholder="Кратко опишите ваш запрос" rows="5"></textarea>
+                                <textarea id="message" name="message" placeholder="Кратко опишите ваш запрос" rows="5"></textarea>
                             </div>
                             <button type="submit" class="submit-btn">Записаться на просмотр</button>
                             <p>Мы ответим вам в течение 30 минут с момента отправки заявки.</p>
@@ -493,27 +499,33 @@
                         </div>
                     </div>
                     <div class="review-form">
-                        <form action="#" method="post">
+                        <form action="https://formsubmit.co/a5159030@yandex.ru" method="POST">
+                            <input type="hidden" name="_subject" value="Новый отзыв о банкетном зале «ЁЛКИ»">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" style="display:none">
+                            
                             <div class="form-group">
-                                <label for="name">Ваше имя</label>
-                                <input type="text" id="name" placeholder="Введите имя" required>
+                                <label for="review-name">Ваше имя</label>
+                                <input type="text" id="review-name" name="name" placeholder="Введите имя" required>
                             </div>
                             <div class="form-group">
-                                <label for="contact">Контакт (email или телефон)</label>
-                                <input type="text" id="contact" placeholder="E-mail или телефон" required>
+                                <label for="review-contact">Контакт (email или телефон)</label>
+                                <input type="text" id="review-contact" name="contact" placeholder="E-mail или телефон" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Ваш отзыв или пожелание</label>
-                                <textarea id="message" placeholder="Напишите впечатления или пожелания" rows="5"></textarea>
+                                <label for="review-message">Ваш отзыв или пожелание</label>
+                                <textarea id="review-message" name="review" placeholder="Напишите впечатления или пожелания" rows="5"></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Оцените зал</label>
+                                <input type="hidden" id="rating-value" name="rating" value="0">
                                 <div class="rating-stars">
-                                    <span class="star">☆</span>
-                                    <span class="star">☆</span>
-                                    <span class="star">☆</span>
-                                    <span class="star">☆</span>
-                                    <span class="star">☆</span>
+                                    <span class="star" data-rating="1">☆</span>
+                                    <span class="star" data-rating="2">☆</span>
+                                    <span class="star" data-rating="3">☆</span>
+                                    <span class="star" data-rating="4">☆</span>
+                                    <span class="star" data-rating="5">☆</span>
                                 </div>
                             </div>
                             <button type="submit" class="submit-btn">Отправить отзыв</button>
