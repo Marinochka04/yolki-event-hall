@@ -18,7 +18,7 @@
                     <ul class="nav-list">
                         <li><a href="#about">О залах</a></li>
                         <li><a href="#services">Преимущества</a></li>
-                        <li><a href="#prices-section">Залы</a></li>
+                        <li><a href="#prices-section">Цены</a></li>
                         <li><a href="#reviews-section">Отзывы</a></li>
                         <li><a href="#footer">Контакты</a></li>
                     </ul>
@@ -36,7 +36,12 @@
             <div class="container">
                 <div class="hero-content">
                     <h1>Банкетный зал «ЁЛКИ» в Долгопрудном</h1>
-                    <p>Три полностью отдельных зала: Барный зал (65 м²) — караоке, музыка и уютная атмосфера. Зелёный зал (90 м²) — кожаные диваны в английском стиле и уникальный стимпанк-интерьер. Шале (240 м², два этажа) — большой экран, проектор, световые эффекты и аудиосистема мощностью 6000Вт для танцев, корпоративов и свадеб.</p>
+                    <p>Три полностью отдельных зала:</p>
+                    <div class="hall-description">
+                        <p>Барный зал (65 м²) — караоке, музыка и уютная атмосфера.</p>
+                        <p>Зелёный зал (90 м²) — кожаные диваны в английском стиле и уникальный стимпанк-интерьер.</p>
+                        <p>Шале (240 м², два этажа) — большой экран, проектор, световые эффекты и аудиосистема мощностью 6000Вт для танцев, корпоративов и свадеб.</p>
+                    </div>
                     <div class="hero-buttons">
                         <a href="#booking-section" class="hero-btn primary">Забронировать зал</a>
                         <a href="#about" class="hero-btn secondary">Подробнее о залах</a>
@@ -188,7 +193,7 @@
                 <div class="prices-grid">
                     <div class="price-card">
                         <div class="price-image">
-                            <img src="images/bar-room.png" alt="Барный зал">
+                            <img src="images/bar-hall-main.jpg" alt="Барный зал">
                         </div>
                         <h3>Барный зал</h3>
                         <p>Идеальное пространство для уютных вечеринок до 30 гостей. Современное караоке, профессиональная звуковая система и стильная атмосфера. Подходит для дней рождения, дружеских встреч, камерных корпоративов.</p>
@@ -202,11 +207,14 @@
                         <div class="price-info">
                             <span class="price">от 2 500₽ / час</span>
                         </div>
-                        <a href="#booking-section" class="book-btn">Забронировать зал</a>
+                        <div class="card-buttons">
+                            <a href="#booking-section" class="book-btn">Забронировать зал</a>
+                            <button class="view-photos-btn" data-hall="bar">Смотреть фото зала</button>
+                        </div>
                     </div>
                     <div class="price-card">
                         <div class="price-image">
-                            <img src="images/green-room.png" alt="Барный зал">
+                            <img src="images/green-hall-main.jpg" alt="Барный зал">
                         </div>
                         <h3>Зелёный зал</h3>
                         <p>Комфортная зона для мероприятий до 50 гостей. Английский интерьер с кожаными диванами, уникальный стиль стимпанк, приватная атмосфера. Идеально для семейных праздников, тематических вечеринок, деловых ужинов.</p>
@@ -220,11 +228,14 @@
                         <div class="price-info">
                             <span class="price">от 3 500₽ / час</span>
                         </div>
-                        <a href="#booking-section" class="book-btn">Забронировать зал</a>
+                        <div class="card-buttons">
+                            <a href="#booking-section" class="book-btn">Забронировать зал</a>
+                            <button class="view-photos-btn" data-hall="green">Смотреть фото зала</button>
+                        </div>
                     </div>
                     <div class="price-card">
                         <div class="price-image">
-                            <img src="images/chalet.png" alt="Барный зал">
+                            <img src="images/chalet-main.jpg" alt="Барный зал">
                         </div>
                         <h3>Шале</h3>
                         <p>Двухуровневый простор (до 120 гостей) для масштабных событий: свадьбы, корпоративы, выпускные. Большой экран, световые эффекты, проектор, мощная аудиосистема 6000Вт — всё для яркой вечеринки.</p>
@@ -238,10 +249,23 @@
                         <div class="price-info">
                             <span class="price">от 5 000₽ / час</span>
                         </div>
-                        <a href="#booking-section" class="book-btn">Забронировать зал</a>
+                        <div class="card-buttons">
+                            <a href="#booking-section" class="book-btn">Забронировать зал</a>
+                            <button class="view-photos-btn" data-hall="chalet">Смотреть фото зала</button>
+                        </div>
                     </div>
                 </div>
                 <p>В стоимость включено: базовое оформление, аренда оборудования, уборка, помощь менеджера. Для индивидуального расчёта и уточнения деталей — оставьте заявку.</p>
+            </div>
+            <div id="photoModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="modalTitle">Фотографии зала</h3>
+                        <button class="close-modal">&times;</button>
+                    </div>
+                    <div class="photo-grid" id="photoGrid">
+                    </div>
+                </div>
             </div>
         </section>
 

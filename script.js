@@ -66,3 +66,83 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const hallPhotos = {
+    bar: {
+        title: 'Барный зал',
+        photos: [
+            'images/bar1.png',
+            'images/bar-hall1.jpg',
+            'images/bar-hall-main.jpg',
+            'images/bar2.png',
+            'images/bar3.png',
+            'images/bar4.png',
+            'images/bar5.png'
+        ]
+    },
+    green: {
+        title: 'Зелёный зал',
+        photos: [
+            'images/green-hall1.jpg',
+            'images/green-hall2.jpg',
+            'images/green-hall-main.jpg'
+        ]
+    },
+    chalet: {
+        title: 'Шале',
+        photos: [
+            'images/chalet-main.jpg',
+            'images/chalet1.jpg',
+            'images/chalet.png',
+            'images/chalet2.png',
+            'images/chalet3.png',
+            'images/chalet4.png',
+            'images/chalet5.png',
+            'images/chalet6.png',
+            'images/chalet7.png',
+            'images/chalet8.png',
+            'images/chalet9.png'
+        ]
+    }
+};
+
+document.querySelectorAll('.view-photos-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const hall = this.getAttribute('data-hall');
+        const hallData = hallPhotos[hall];
+        
+        document.getElementById('modalTitle').textContent = `Фотографии - ${hallData.title}`;
+        
+        const photoGrid = document.getElementById('photoGrid');
+        photoGrid.innerHTML = '';
+        
+        hallData.photos.forEach(photo => {
+            const photoItem = document.createElement('div');
+            photoItem.className = 'photo-item';
+            photoItem.innerHTML = `<img src="${photo}" alt="${hallData.title}">`;
+            photoGrid.appendChild(photoItem);
+        });
+        
+        document.getElementById('photoModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+document.querySelector('.close-modal').addEventListener('click', function() {
+    document.getElementById('photoModal').classList.remove('active');
+    document.body.style.overflow = '';
+});
+
+document.getElementById('photoModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.getElementById('photoModal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
