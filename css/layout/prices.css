@@ -116,6 +116,20 @@
     color: #D32F2F;
 }
 
+.price-main {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #D32F2F;
+}
+
+.price-sub {
+    font-size: 14px;
+    opacity: 0.8;
+    text-transform: uppercase;
+    color: #D32F2F;
+}
+
 .card-buttons {
     display: flex;
     flex-direction: column;
@@ -370,6 +384,16 @@
 
     .price {
         font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .price-main {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .price-sub {
+        font-size: 1.1rem;
         text-align: center;
     }
 
